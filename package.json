@@ -2,10 +2,10 @@
   "name": "contest",
   "version": "1.0.0",
   "description": "FullStack Javascript Development: Node.js, MongoDB, React.js",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
     "start": "nodemon --exec babel-node server.js --ignore public/",
-    "dev": "webpack -wd"     
+    "dev": "webpack -wd"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/Limitlessman/contest#readme",
   "dependencies": {
+    "ejs": "2.5.7",
     "express": "4.16.2",
     "mongodb": "3.0.1",
     "react": "16.2.0",
