@@ -1,17 +1,10 @@
 import React from 'react';
+//import { hydrate } from "react-dom"
 import ReactDOM from 'react-dom';
 import App from './components/App';
 
-ReactDOM.render(
-	<App />,
+
+ReactDOM.hydrate(
+	<App initialData={window.initialData}/>,
 	document.getElementById("root")
 );
-
-setTimeout( () => {
-	ReactDOM.render(
-		<h1>
-			Hola Mundo 2
-		</h1>,
-		document.getElementById("root")
-	);
-}, 4000);

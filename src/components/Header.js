@@ -1,18 +1,29 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
+
 class Header extends Component {
-  state = {
-    pageHeader: "React.."
-  };
+  constructor(props){
+    super(props);
+  }
+
   render(){
     return(
       <h2 className="text-center">
-        {this.state.pageHeader}
+        {this.props.message}
       </h2>
     )
   }
 }
+/*
+const Header = ({ message }) => {
+  return (
+    <h2 className="Header text-center">
+      {message}
+    </h2>
+  );
+};
+*/
 
 Header.propTypes = {
   message: PropTypes.string

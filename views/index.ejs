@@ -1,12 +1,16 @@
 <%- include('header') -%>
-	<%- content %>
-	<%= Math.random() %>
-	<div id="root"></div>
-	Templates frameworks: 
+	<!--%= Math.random() %-->
+	<div id="root"><%- initialMarkup -%></div>
+
+  <script type="text/javascript">
+    window.initialData = <%- JSON.stringify(initialData) -%>;
+  </script>
+	
+	<!--Templates frameworks:
 	<ul>
 		<li>Koajs</li>
 		<li>hapi</li>
 		<li>pug.js</li>
 		<li>Handlebars </li>
-	</ul>
+	</ul-->
 <%- include('footer') -%>
